@@ -1,0 +1,758 @@
+[
+  {
+  "resourceType": "Patient",
+  "id": "genetics-example1",
+  "meta": {
+    "lastUpdated": "2012-05-29T23:45:32Z"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Everywoman, Eve. SSN:\n      444222222</div>"
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "SS"
+          }
+        ]
+      },
+      "system": "http://hl7.org/fhir/sid/us-ssn",
+      "value": "444222222"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Everywoman",
+      "given": [
+        "Eve"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "555-555-2003",
+      "use": "work"
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1973-05-31",
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "2222 Home Street"
+      ]
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/hl7"
+  }
+},
+{
+  "resourceType": "Patient",
+  "id": "glossy",
+  "meta": {
+    "lastUpdated": "2014-11-13T11:41:00+11:00"
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p>Henry Levin the 7th</p>\n      <p>MRN: 123456. Male, 24-Sept 1932</p>\n    </div>"
+  },
+  "extension": [
+    {
+      "url": "http://example.org/StructureDefinition/trials",
+      "valueCode": "renal"
+    }
+  ],
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "http://www.goodhealth.org/identifiers/mrn",
+      "value": "123456"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Levin",
+      "given": [
+        "Henry"
+      ],
+      "suffix": [
+        "The 7th"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1932-09-24",
+  "generalPractitioner": [
+    {
+      "reference": "Practitioner/example",
+      "display": "Dr Adam Careful"
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/2",
+    "display": "Good Health Clinic"
+  }
+},
+{
+  "resourceType": "Patient",
+  "id": "f201",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f201</p><p><b>identifier</b>: BSN = 123456789 (OFFICIAL), BSN = 123456789 (OFFICIAL)</p><p><b>active</b>: true</p><p><b>name</b>: Roel(OFFICIAL)</p><p><b>telecom</b>: ph: +31612345678(MOBILE), ph: +31201234567(HOME)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 13/03/1960</p><p><b>deceased</b>: false</p><p><b>address</b>: Bos en Lommerplein 280 Amsterdam 1055RW NLD (HOME)</p><p><b>maritalStatus</b>: Legally married <span>(Details : {SNOMED CT code '36629006' = 'Legal marriage', given as 'Legally married'}; {http://hl7.org/fhir/v3/MaritalStatus code 'M' = 'Married)</span></p><p><b>multipleBirth</b>: false</p><p><b>photo</b>: </p><h3>Contacts</h3><table><tr><td>-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Wife <span>(Details : {SNOMED CT code '127850001' = 'Wife', given as 'Wife'}; {http://hl7.org/fhir/v2/0131 code 'N' = 'Next-of-Kin; {http://hl7.org/fhir/v3/RoleCode code 'WIFE' = 'wife)</span></td><td>Ariadne Bor-Jansma</td><td>ph: +31201234567(HOME)</td></tr></table><h3>Communications</h3><table><tr><td>-</td><td><b>Language</b></td><td><b>Preferred</b></td></tr><tr><td>*</td><td>Dutch <span>(Details : {urn:ietf:bcp:47 code 'nl-NL' = 'Dutch (Region=Netherlands)', given as 'Dutch'})</span></td><td>true</td></tr></table><p><b>managingOrganization</b>: <a>AUMC</a></p></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "type": {
+        "text": "BSN"
+      },
+      "system": "urn:oid:2.16.840.1.113883.2.4.6.3",
+      "value": "123456789"
+    },
+    {
+      "use": "official",
+      "type": {
+        "text": "BSN"
+      },
+      "system": "urn:oid:2.16.840.1.113883.2.4.6.3",
+      "value": "123456789"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "text": "Roel",
+      "family": "Bor",
+      "given": [
+        "Roelof Olaf"
+      ],
+      "prefix": [
+        "Drs."
+      ],
+      "suffix": [
+        "PDEng."
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "+31612345678",
+      "use": "mobile"
+    },
+    {
+      "system": "phone",
+      "value": "+31201234567",
+      "use": "home"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1960-03-13",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "Bos en Lommerplein 280"
+      ],
+      "city": "Amsterdam",
+      "postalCode": "1055RW",
+      "country": "NLD"
+    }
+  ],
+  "maritalStatus": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "36629006",
+        "display": "Legally married"
+      },
+      {
+        "system": "http://hl7.org/fhir/v3/MaritalStatus",
+        "code": "M"
+      }
+    ]
+  },
+  "multipleBirthBoolean": false,
+  "photo": [
+    {
+      "contentType": "image/jpeg",
+      "url": "Binary/f006"
+    }
+  ],
+  "contact": [
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "127850001",
+              "display": "Wife"
+            },
+            {
+              "system": "http://hl7.org/fhir/v2/0131",
+              "code": "N"
+            },
+            {
+              "system": "http://hl7.org/fhir/v3/RoleCode",
+              "code": "WIFE"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "use": "usual",
+        "text": "Ariadne Bor-Jansma"
+      },
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "+31201234567",
+          "use": "home"
+        }
+      ]
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "nl-NL",
+            "display": "Dutch"
+          }
+        ]
+      },
+      "preferred": true
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/f201",
+    "display": "AUMC"
+  }
+},
+{
+  "resourceType": "Patient",
+  "id": "f001",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative with Details</b></p><p><b>id</b>: f001</p><p><b>identifier</b>: 738472983 (USUAL), ?? (USUAL)</p><p><b>active</b>: true</p><p><b>name</b>: Pieter van de Heuvel </p><p><b>telecom</b>: ph: 0648352638(MOBILE), p.heuvel@gmail.com(HOME)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 17/11/1944</p><p><b>deceased</b>: false</p><p><b>address</b>: Van Egmondkade 23 Amsterdam 1024 RJ NLD (HOME)</p><p><b>maritalStatus</b>: Getrouwd <span>(Details : {http://hl7.org/fhir/v3/MaritalStatus code 'M' = 'Married', given as 'Married'})</span></p><p><b>multipleBirth</b>: true</p><h3>Contacts</h3><table><tr><td>-</td><td><b>Relationship</b></td><td><b>Name</b></td><td><b>Telecom</b></td></tr><tr><td>*</td><td>Emergency Contact <span>(Details : {http://hl7.org/fhir/v2/0131 code 'C' = 'Emergency Contact)</span></td><td>Sarah Abels </td><td>ph: 0690383372(MOBILE)</td></tr></table><h3>Communications</h3><table><tr><td>-</td><td><b>Language</b></td><td><b>Preferred</b></td></tr><tr><td>*</td><td>Nederlands <span>(Details : {urn:ietf:bcp:47 code 'nl' = 'Dutch', given as 'Dutch'})</span></td><td>true</td></tr></table><p><b>managingOrganization</b>: <a>Burgers University Medical Centre</a></p></div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "system": "urn:oid:2.16.840.1.113883.2.4.6.3",
+      "value": "738472983"
+    },
+    {
+      "use": "usual",
+      "system": "urn:oid:2.16.840.1.113883.2.4.6.3"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "usual",
+      "family": "van de Heuvel",
+      "given": [
+        "Pieter"
+      ],
+      "suffix": [
+        "MSc"
+      ]
+    }
+  ],
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0648352638",
+      "use": "mobile"
+    },
+    {
+      "system": "email",
+      "value": "p.heuvel@gmail.com",
+      "use": "home"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1944-11-17",
+  "deceasedBoolean": false,
+  "address": [
+    {
+      "use": "home",
+      "line": [
+        "Van Egmondkade 23"
+      ],
+      "city": "Amsterdam",
+      "postalCode": "1024 RJ",
+      "country": "NLD"
+    }
+  ],
+  "maritalStatus": {
+    "coding": [
+      {
+        "system": "http://hl7.org/fhir/v3/MaritalStatus",
+        "code": "M",
+        "display": "Married"
+      }
+    ],
+    "text": "Getrouwd"
+  },
+  "multipleBirthBoolean": true,
+  "contact": [
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0131",
+              "code": "C"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "use": "usual",
+        "family": "Abels",
+        "given": [
+          "Sarah"
+        ]
+      },
+      "telecom": [
+        {
+          "system": "phone",
+          "value": "0690383372",
+          "use": "mobile"
+        }
+      ]
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "nl",
+            "display": "Dutch"
+          }
+        ],
+        "text": "Nederlands"
+      },
+      "preferred": true
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/f001",
+    "display": "Burgers University Medical Centre"
+  }
+},
+{
+  "resourceType": "Patient",
+  "id": "ihe-pcd",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Albert Brooks, Id: AB60001</div>"
+  },
+  "identifier": [
+    {
+      "type": {
+        "text": "Internal Identifier"
+      },
+      "value": "AB60001"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "BROOKS",
+      "given": [
+        "ALBERT"
+      ]
+    }
+  ]
+},
+{
+  "resourceType": "Patient",
+  "id": "dicom",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"> Patient MINT_TEST, ID = MINT1234. Age = 56y, Size =\n      1.83m, Weight = 72.58kg </div>"
+  },
+  "extension": [
+    {
+      "url": "http://nema.org/fhir/extensions#0010:1010",
+      "valueQuantity": {
+        "value": 56,
+        "unit": "Y"
+      }
+    },
+    {
+      "url": "http://nema.org/fhir/extensions#0010:1020",
+      "valueQuantity": {
+        "value": 1.83,
+        "unit": "m"
+      }
+    },
+    {
+      "url": "http://nema.org/fhir/extensions#0010:1030",
+      "valueQuantity": {
+        "value": 72.58,
+        "unit": "kg"
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://nema.org/examples/patients",
+      "value": "MINT1234"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "MINT_TEST"
+    }
+  ],
+  "gender": "male",
+  "_gender": {
+    "extension": [
+      {
+        "url": "http://nema.org/examples/extensions#gender",
+        "valueCoding": {
+          "system": "http://nema.org/examples/gender",
+          "code": "M"
+        }
+      }
+    ]
+  },
+  "managingOrganization": {
+    "reference": "Organization/1"
+  }
+},
+{
+  "resourceType": "Patient",
+  "id": "xds",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      \n      <p>Patient John Doe, M, 27-May 1956. ID: 89765a87b</p>\n    \n    </div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "urn:oid:1.2.3.4.5",
+      "value": "89765a87b"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Doe",
+      "given": [
+        "John"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1956-05-27",
+  "address": [
+    {
+      "line": [
+        "100 Main St"
+      ],
+      "city": "Metropolis",
+      "state": "Il",
+      "postalCode": "44130",
+      "country": "USA"
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/2"
+  }
+},
+{
+  "resourceType": "Patient",
+  "id": "xcda",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      \n      <p>Henry Levin the 7th</p>\n    \n    </div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "urn:oid:2.16.840.1.113883.19.5",
+      "value": "12345"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "family": "Levin",
+      "given": [
+        "Henry"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1932-09-24",
+  "managingOrganization": {
+    "reference": "Organization/2.16.840.1.113883.19.5",
+    "display": "Good Health Clinic"
+  }
+},
+{
+  "resourceType": "Patient",
+  "id": "pat4",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t<p>Patient Sandy Notsowell @ Acme Healthcare, Inc. MR = 123458, DECEASED</p>\n\t\t</div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "urn:oid:0.1.2.3.4.5.6.7",
+      "value": "123458"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Notsowell",
+      "given": [
+        "Sandy"
+      ]
+    }
+  ],
+  "gender": "female",
+  "birthDate": "1982-08-02",
+  "deceasedBoolean": true,
+  "managingOrganization": {
+    "reference": "Organization/1",
+    "display": "ACME Healthcare, Inc"
+  }
+},
+{
+  "resourceType": "Patient",
+  "id": "pat3",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      \n      <p>Patient Simon Notsowell @ Acme Healthcare, Inc. MR = 123457, DECEASED</p>\n    \n    </div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "urn:oid:0.1.2.3.4.5.6.7",
+      "value": "123457"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Notsowell",
+      "given": [
+        "Simon"
+      ]
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1982-01-23",
+  "deceasedDateTime": "2015-02-14T13:42:00+10:00",
+  "managingOrganization": {
+    "reference": "Organization/1",
+    "display": "ACME Healthcare, Inc"
+  }
+},
+{
+  "resourceType": "Patient",
+  "id": "pat2",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      \n      <p>Patient Donald D DUCK @ Acme Healthcare, Inc. MR = 123456</p>\n    \n    </div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "urn:oid:0.1.2.3.4.5.6.7",
+      "value": "123456"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Donald",
+      "given": [
+        "Duck",
+        "D"
+      ]
+    }
+  ],
+  "gender": "other",
+  "_gender": {
+    "extension": [
+      {
+        "url": "http://example.org/Profile/administrative-status",
+        "valueCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0001",
+              "code": "A",
+              "display": "Ambiguous"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "photo": [
+    {
+      "contentType": "image/gif",
+      "data": "R0lGODlhEwARAPcAAAAAAAAA/+9aAO+1AP/WAP/eAP/eCP/eEP/eGP/nAP/nCP/nEP/nIf/nKf/nUv/nWv/vAP/vCP/vEP/vGP/vIf/vKf/vMf/vOf/vWv/vY//             va//vjP/3c//3lP/3nP//tf//vf////////////////////////////////////////////////////////////////////////////////////////////////             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////             ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////             /////////////////////////////////////////////////////////yH5BAEAAAEALAAAAAATABEAAAi+AAMIDDCgYMGBCBMSvMCQ4QCFCQcwDBGCA4cLDyE             GECDxAoAQHjxwyKhQAMeGIUOSJJjRpIAGDS5wCDly4AALFlYOgHlBwwOSNydM0AmzwYGjBi8IHWoTgQYORg8QIGDAwAKhESI8HIDgwQaRDI1WXXAhK9MBBzZ8/X             DxQoUFZC9IiCBh6wEHGz6IbNuwQoSpWxEgyLCXL8O/gAnylNlW6AUEBRIL7Og3KwQIiCXb9HsZQoIEUzUjNEiaNMKAAAA7"
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/1",
+    "display": "ACME Healthcare, Inc"
+  },
+  "link": [
+    {
+      "other": {
+        "reference": "Patient/pat1"
+      },
+      "type": "seealso"
+    }
+  ]
+},
+{
+  "resourceType": "Patient",
+  "id": "pat1",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      \n      <p>Patient Donald DUCK @ Acme Healthcare, Inc. MR = 654321</p>\n    \n    </div>"
+  },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "system": "http://hl7.org/fhir/v2/0203",
+            "code": "MR"
+          }
+        ]
+      },
+      "system": "urn:oid:0.1.2.3.4.5.6.7",
+      "value": "654321"
+    }
+  ],
+  "active": true,
+  "name": [
+    {
+      "use": "official",
+      "family": "Donald",
+      "given": [
+        "Duck"
+      ]
+    }
+  ],
+  "gender": "male",
+  "photo": [
+    {
+      "contentType": "image/gif",
+      "data": "R0lGODlhEwARAPcAAAAAAAAA/+9aAO+1AP/WAP/eAP/eCP/eEP/eGP/nAP/nCP/nEP/nIf/nKf/nUv/nWv/vAP/vCP/vEP/vGP/vIf/vKf/vMf/vOf/vWv/vY//va//vjP/3c//3lP/3nP//tf//vf///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////yH5BAEAAAEALAAAAAATABEAAAi+AAMIDDCgYMGBCBMSvMCQ4QCFCQcwDBGCA4cLDyEGECDxAoAQHjxwyKhQAMeGIUOSJJjRpIAGDS5wCDly4AALFlYOgHlBwwOSNydM0AmzwYGjBi8IHWoTgQYORg8QIGDAwAKhESI8HIDgwQaRDI1WXXAhK9MBBzZ8/XDxQoUFZC9IiCBh6wEHGz6IbNuwQoSpWxEgyLCXL8O/gAnylNlW6AUEBRIL7Og3KwQIiCXb9HsZQoIEUzUjNEiaNMKAAAA7"
+    }
+  ],
+  "contact": [
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/v2/0131",
+              "code": "E"
+            }
+          ]
+        }
+      ],
+      "organization": {
+        "reference": "Organization/1",
+        "display": "Walt Disney Corporation"
+      }
+    }
+  ],
+  "managingOrganization": {
+    "reference": "Organization/1",
+    "display": "ACME Healthcare, Inc"
+  },
+  "link": [
+    {
+      "other": {
+        "reference": "Patient/pat2"
+      },
+      "type": "seealso"
+    }
+  ]
+}
+]
